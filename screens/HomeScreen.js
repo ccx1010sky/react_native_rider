@@ -1,14 +1,20 @@
 import { StyleSheet, Text, View,SafeAreaView } from 'react-native'
 import React from 'react'
+import tw from "twrnc"
+
 
 const HomeScreen = () => {
   return (
     <SafeAreaView>
-      <Text>I am HomeScreen</Text>
+      <Text style = {tw`text-red-500`}>I am HomeScreen</Text>
     </SafeAreaView>
   )
 }
 
 export default HomeScreen
 
-const styles = StyleSheet.create({})
+// const styles = StyleSheet.create({
+//     text:{
+//         color: "blue"
+//     }
+// })
