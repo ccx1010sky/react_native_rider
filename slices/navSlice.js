@@ -1,4 +1,4 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   origin: null,
@@ -25,6 +25,8 @@ export const navSlice = createSlice({
 export const { setOrigin, setDestination, setTravelTimeInformation } =
   navSlice.actions;
 
+
+//selectors
 export const selectOrigin = (state) => state.nav.origin;
 export const SelectDestination = (state) => state.nav.destination;
 export const selectTravelTimeInformation = (state) =>
